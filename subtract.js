@@ -1,6 +1,10 @@
-let num1 = parseFloat(prompt("Enter first number:"));
-let num2 = parseFloat(prompt("Enter second number:"));
+function sub(a, b) {
+  return a - b;
+}
 
-let result = num1 - num2;
-
-alert("Result: " + result);
+const subBtn = document.getElementById('subBtn');
+subBtn.addEventListener('click', function () {
+  const a = Number(document.getElementById('valueA').value);
+  const b = Number(document.getElementById('valueB').value);
+  document.getElementById('result').innerText = sub(a, b);
+});
