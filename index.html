@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen flex items-center justify-center p-4">
+  <div class="w-full max-w-lg bg-slate-800/80 border border-slate-700 shadow-2xl rounded-2xl p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">Simple JS Calculator</h1>
+
+    <div class="grid grid-cols-1 gap-4">
+      <input id="valueA" type="number" placeholder="Enter first number" class="w-full rounded-lg px-4 py-3 bg-slate-900 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <input id="valueB" type="number" placeholder="Enter second number" class="w-full rounded-lg px-4 py-3 bg-slate-900 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+    </div>
+
+    <div class="grid grid-cols-2 gap-3 mt-4">
+      <button id="addBtn" class="rounded-lg py-3 bg-indigo-500 hover:bg-indigo-600">Add</button>
+      <button id="subBtn" class="rounded-lg py-3 bg-rose-500 hover:bg-rose-600">Subtract</button>
+      <button id="multBtn" class="rounded-lg py-3 bg-emerald-500 hover:bg-emerald-600">Multiply</button>
+      <button id="divBtn" class="rounded-lg py-3 bg-amber-500 hover:bg-amber-600">Divide</button>
+    </div>
+
+    <div class="mt-5 p-4 rounded-lg bg-slate-900 border border-slate-700">
+      <p class="text-sm text-slate-400">Result</p>
+      <p id="result" class="text-2xl font-semibold mt-1">0</p>
+    </div>
+  </div>
+
+  <script src="add.js"></script>
+  <script src="sub.js"></script>
+  <script src="mult.js"></script>
+  <script src="div.js"></script>
+</body>
+</html>
